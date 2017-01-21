@@ -1,0 +1,141 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5">
+
+        <rws.sm3.app.CustomWidget.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="@string/sign_up"
+            android:textColor="#000000"
+            android:textSize="@dimen/size_top_text" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        android:weightSum="15">
+
+        <rws.sm3.app.CustomWidget.CustomEditText
+            android:id="@+id/edt_fname"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.3"
+            android:background="@drawable/backgroundroundcorner"
+            android:gravity="right|center_vertical"
+            android:hint="@string/hint_f_name"
+            android:inputType="text"
+            android:paddingRight="@dimen/padding"
+            android:singleLine="true"
+            android:textColor="#8F8F8E"
+            android:textSize="@dimen/size_aud_text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.15"></View>
+
+        <rws.sm3.app.CustomWidget.CustomEditText
+            android:id="@+id/edt_u_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.3"
+            android:background="@drawable/backgroundroundcorner"
+            android:gravity="right|center_vertical"
+            android:hint="@string/hint_u_name"
+            android:inputType="text"
+            android:paddingRight="@dimen/padding"
+            android:singleLine="true"
+            android:textColor="#8F8F8E"
+            android:textSize="@dimen/size_aud_text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.15"></View>
+
+        <rws.sm3.app.CustomWidget.CustomEditText
+            android:id="@+id/edt_email_sign"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.3"
+            android:background="@drawable/backgroundroundcorner"
+            android:gravity="right|center_vertical"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress"
+            android:paddingRight="@dimen/padding"
+            android:singleLine="true"
+            android:textColor="#8F8F8E"
+            android:textSize="@dimen/size_aud_text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.15"></View>
+
+        <rws.sm3.app.CustomWidget.CustomEditText
+            android:id="@+id/edt_pass_sign"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.3"
+            android:background="@drawable/backgroundroundcorner"
+            android:gravity="right|center_vertical"
+            android:hint="@string/hint_pass"
+            android:inputType="textPassword"
+            android:paddingRight="@dimen/padding"
+            android:singleLine="true"
+            android:textColor="#8F8F8E"
+            android:textSize="@dimen/size_aud_text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"></View>
+
+        <rws.sm3.app.CustomWidget.CustomTextView
+            android:id="@+id/btn_reg"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.3"
+            android:background="@drawable/bg_log_btn"
+            android:gravity="center"
+            android:text="@string/create_ac"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/size_aud_text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"></View>
+
+        <rws.sm3.app.CustomWidget.CustomTextView
+            android:id="@+id/btn_alreac"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.3"
+            android:gravity="center"
+            android:text="@string/ac_alredy"
+            android:textColor="#B7B7B7"
+            android:textSize="@dimen/size_aud_text" />
+    </LinearLayout>
+</LinearLayout>

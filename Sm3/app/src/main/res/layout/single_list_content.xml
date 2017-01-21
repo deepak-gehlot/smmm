@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/single_row_height">
+    <ImageView
+        android:id="@+id/img_arrow"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:scaleType="centerInside"
+        android:layout_marginLeft="@dimen/padding_listcontent"
+        android:src="@drawable/cat_arrow"
+        android:layout_centerHorizontal="true"
+        android:layout_height="@dimen/single_row_height" />
+    <rws.sm3.app.CustomWidget.CustomTextView
+        android:id="@+id/title"
+        android:layout_toRightOf="@+id/img_arrow"
+        android:textColor="#000000"
+        android:layout_marginLeft="5dp"
+        android:gravity="right"
+        android:text="@string/title"
+        android:layout_marginRight="@dimen/padding_listcontent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

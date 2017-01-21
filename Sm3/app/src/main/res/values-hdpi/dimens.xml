@@ -1,0 +1,17 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="size_aud_text">12sp</dimen>
+    <dimen name="time_song">8sp</dimen>
+    <dimen name="margin">25dp</dimen>
+    <dimen name="padding">5dp</dimen>
+    <dimen name="corners">3dp</dimen>
+    <dimen name="size_top_text">15sp</dimen>
+    <dimen name="height">90dp</dimen>
+    <dimen name="img_height">50dp</dimen>
+    <dimen name="drawer_width">260dp</dimen>
+    <dimen name="width_layout">55dp</dimen>
+    <dimen name="size_no_text">14sp</dimen>
+    <dimen name="single_row_height">40dp</dimen>
+    <dimen name="divider_height">0.5dp</dimen>
+    <dimen name="padding_listcontent">10dp</dimen>
+</resources>

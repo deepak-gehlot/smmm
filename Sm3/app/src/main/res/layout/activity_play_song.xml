@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_actionbar"
+        layout="@layout/toolbar_song_play"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/track_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="15dip"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/default_track" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:gravity="center">
+
+            <rws.sm3.app.CustomWidget.CustomTextView
+                android:id="@+id/book_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/padding"
+                android:paddingLeft="@dimen/margin"
+                android:paddingRight="@dimen/margin"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/size_top_text" />
+
+            <rws.sm3.app.CustomWidget.CustomTextView
+                android:id="@+id/auth_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/book_name"
+                android:paddingBottom="@dimen/padding"
+                android:paddingLeft="@dimen/margin"
+                android:paddingRight="@dimen/margin"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/size_top_text" />
+
+            <rws.sm3.app.CustomWidget.CustomTextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/auth_name"
+                android:lines="4"
+                android:paddingBottom="@dimen/padding"
+                android:paddingLeft="@dimen/margin"
+                android:paddingRight="@dimen/margin"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/size_top_text" />
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/txts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/images"
+            android:layout_centerHorizontal="true"
+            android:background="#42C4BD"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/padding"
+            android:weightSum="5">
+
+            <ImageView
+                android:id="@+id/like_img"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/padding"
+                android:paddingTop="@dimen/padding"
+                android:scaleType="centerInside"
+                android:src="@drawable/like_icon" />
+
+            <ImageView
+                android:id="@+id/comment_img"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/padding"
+                android:paddingTop="@dimen/padding"
+                android:scaleType="centerInside"
+                android:src="@drawable/comment" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/padding"
+                android:paddingTop="@dimen/padding"
+                android:scaleType="centerInside"
+                android:src="@drawable/listener" />
+
+            <ImageView
+                android:id="@+id/share_img"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/padding"
+                android:paddingTop="@dimen/padding"
+                android:scaleType="centerInside"
+                android:src="@drawable/share" />
+
+            <ImageView
+                android:id="@+id/add_playlist"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/padding"
+                android:paddingTop="@dimen/padding"
+                android:scaleType="centerInside"
+                android:src="@drawable/add_to_play" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/images"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="#42C4BD"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/padding"
+            android:weightSum="5">
+
+            <rws.sm3.app.CustomWidget.CustomTextView
+                android:id="@+id/no_likes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingBottom="@dimen/padding"
+                android:text=""
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/size_aud_text" />
+
+            <rws.sm3.app.CustomWidget.CustomTextView
+                android:id="@+id/no_comment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingBottom="@dimen/padding"
+                android:text=""
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/size_aud_text" />
+
+            <rws.sm3.app.CustomWidget.CustomTextView
+                android:id="@+id/no_playlist"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingBottom="@dimen/padding"
+                android:text=""
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/size_aud_text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_player"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/play_lay_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/padinglay"
+            android:background="@drawable/back_play_new"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.05" />
+
+                <SeekBar
+                    android:id="@+id/song_prog"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.8"
+                    android:progressDrawable="@drawable/progress_seekbar"
+                    android:secondaryProgress="0"
+                    android:thumb="@drawable/control_btn" />
+
+                <rws.sm3.app.CustomWidget.CustomTextView
+                    android:id="@+id/remaintime"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:gravity="center"
+                    android:text="00:00"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/time_song" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.05" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="7">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"></View>
+
+                <ImageView
+                    android:id="@+id/btn_prev_song"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/play_pause_back"
+                    android:padding="@dimen/padding"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/prev" />
+
+                <ImageView
+                    android:id="@+id/btn_ply_song"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/play_pause_back"
+                    android:padding="@dimen/padding"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/play_btn_main" />
+
+                <ImageView
+                    android:id="@+id/btn_next_song"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/play_pause_back"
+                    android:padding="@dimen/padding"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/next" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

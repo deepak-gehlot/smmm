@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/navDrawerPanel"
+        android:layout_width="@dimen/drawer_width"
+        android:clickable="true"
+        android:layout_height="match_parent"
+        android:background="#226261"
+        android:layout_gravity="end"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height">
+            <rws.sm3.app.CustomWidget.CircleImageView
+                android:id="@+id/profile_pic"
+                android:layout_width="@dimen/img_height"
+                android:src="@drawable/user_default"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_height="@dimen/img_height" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/profile_pic"
+                android:layout_height="wrap_content">
+                <rws.sm3.app.CustomWidget.CustomTextView
+                    android:id="@+id/user_name"
+                    android:layout_width="match_parent"
+                    android:gravity="right"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/size_top_text"
+                    android:text="@string/audio"
+                    android:layout_height="wrap_content" />
+                <rws.sm3.app.CustomWidget.CustomTextView
+                    android:id="@+id/loc"
+                    android:layout_width="match_parent"
+                    android:gravity="right"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/size_aud_text"
+                    android:text="@string/audio"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/lay1"
+                android:layout_width="@dimen/width_layout"
+                android:orientation="vertical"
+                android:layout_marginRight="@dimen/padding"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/uploaded"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content" />
+                <rws.sm3.app.CustomWidget.CustomTextView
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/size_aud_text"
+                    android:text="@string/post"
+                    android:layout_height="wrap_content" />
+                <rws.sm3.app.CustomWidget.CustomTextView
+                    android:id="@+id/no_of_uploads"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/size_no_text"
+                    android:text="0"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay2"
+                android:layout_width="@dimen/width_layout"
+                android:orientation="vertical"
+                android:layout_toLeftOf="@+id/lay3"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/follower"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content" />
+                <rws.sm3.app.CustomWidget.CustomTextView
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/size_aud_text"
+                    android:text="@string/follower"
+                    android:layout_height="wrap_content" />
+                <rws.sm3.app.CustomWidget.CustomTextView
+                    android:id="@+id/no_of_followers"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/size_no_text"
+                    android:text="0"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lay3"
+                android:layout_width="@dimen/width_layout"
+                android:orientation="vertical"
+                android:layout_toLeftOf="@+id/lay1"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/follow"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content" />
+                <rws.sm3.app.CustomWidget.CustomTextView
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/size_aud_text"
+                    android:text="@string/follow"
+                    android:layout_height="wrap_content" />
+                <rws.sm3.app.CustomWidget.CustomTextView
+                    android:id="@+id/no_of_following"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/size_no_text"
+                    android:text="0"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lay4"
+                android:layout_width="@dimen/width_layout"
+                android:orientation="vertical"
+                android:layout_toLeftOf="@+id/lay2"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/palylist"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content" />
+                <rws.sm3.app.CustomWidget.CustomTextView
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/size_aud_text"
+                    android:text="@string/like"
+                    android:layout_height="wrap_content" />
+                <rws.sm3.app.CustomWidget.CustomTextView
+                    android:id="@+id/no_of_play_songs"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/size_no_text"
+                    android:text="0"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="#ffffff"
+            android:layout_marginLeft="@dimen/padding_listcontent"
+            android:layout_marginRight="@dimen/padding_listcontent"
+            android:layout_height="@dimen/divider_height"></View>
+        <ListView
+            android:id="@+id/navDrawerList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:choiceMode="singleChoice"
+            android:layout_marginRight="@dimen/padding_listcontent"
+            android:layout_marginLeft="@dimen/padding_listcontent"
+            android:dividerHeight="@dimen/divider_height"
+            android:divider="#ffffff"/>
+        <View
+            android:layout_width="match_parent"
+            android:background="#ffffff"
+            android:layout_marginLeft="@dimen/padding_listcontent"
+            android:layout_marginRight="@dimen/padding_listcontent"
+            android:layout_height="@dimen/divider_height"></View>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_height="wrap_content">
+            <rws.sm3.app.CustomWidget.CustomTextView
+                android:id="@+id/log_out"
+                android:layout_width="match_parent"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:text="@string/logout"
+                android:textSize="@dimen/size_top_text"
+                android:background="@drawable/drawer_but_back"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_height="@dimen/single_row_height" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="3"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/fb"
+                android:layout_width="@dimen/width_layout"
+                android:src="@drawable/facebook"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/padding"
+                android:background="@drawable/social_icon_bg"
+                android:scaleType="centerInside"
+                android:layout_height="@dimen/width_layout" />
+            <ImageView
+                android:id="@+id/tw"
+                android:layout_width="@dimen/width_layout"
+                android:src="@drawable/twitter"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/padding"
+                android:background="@drawable/social_icon_bg"
+                android:scaleType="centerInside"
+                android:layout_height="@dimen/width_layout" />
+            <ImageView
+                android:id="@+id/is"
+                android:layout_width="@dimen/width_layout"
+                android:src="@drawable/insta"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/padding"
+                android:scaleType="centerInside"
+                android:background="@drawable/social_icon_bg"
+                android:layout_height="@dimen/width_layout" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

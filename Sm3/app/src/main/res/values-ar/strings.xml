@@ -1,0 +1,160 @@
+<resources>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="Copy_right">جميع الحقوق محفوظة © Audio Ketab 2015</string>
+    <string name="app_name">Audioketab</string>
+    <string name="audio">سمعي</string>
+    <string name="action_settings">Settings</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="fb">التسجيل بواسطة</string>
+    <string name="or">أو</string>
+    <string name="g_plus">التسجيل بواسطة</string>
+    <string name="hint_email">البريد الالكتروني</string>
+    <string name="hint_pass">كلمة المرور</string>
+    <string name="signup">هل أنت جديد ؟ سجّل الآن!</string>
+    <string name="forgot_pass">نسيت كلمة المرور؟</string>
+    <string name="hint_f_name">الاسم الكامل</string>
+    <string name="hint_u_name">اسم العائلة</string>
+    <string name="create_ac">التسجيل</string>
+    <string name="sign_up">سجل</string>
+    <string name="ac_alredy">لديك حساب سابق!</string>
+    <string name="forgot_submit">ارسال</string>
+    <string name="submit">عرض</string>
+    <string name="follow">متحدثين</string>
+    <string name="follower">مستمعين</string>
+    <string name="post">مشاركات</string>
+    <string name="like">المفضلة</string>
+    <string name="success">نجاح</string>
+    <string name="change_pass_heading">تغيير كلمة السر</string>
+    <string name="hint_current_pwd">كلمة السر الحالية</string>
+    <string name="hint_current_pwd1">كلمة السر الحالية</string>
+    <string name="hint_new_pwd">كلمة السر الجديدة</string>
+    <string name="hint_confirm_pwd">تأكيد كلمة المرور</string>
+    <string name="email_not_verified">
+لا يتم التحقق من البريد الإلكتروني الخاص بك حتى الآن
+يرجى التحقق من البريد الإلكتروني الخاص بك والتحقق .</string>
+    <string name="not_verify">لم يتم التحقق منه</string>
+    <string name="reg_msg">تحقق من بريدك الالكتروني لتأكيد التسجيل</string>
+    <string-array name="list_item">
+        <item>الصفحة الرئيسية</item>
+        <item>إضافة</item>
+        <item>بحث</item>
+        <item>تعديل الملف الشخصي</item>
+        <item>اتصل بنا</item>
+        <item>عنا</item>
+        <item>تغيير كلمة السر</item>
+    </string-array>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="title">سمعي</string>
+    <string name="btn_more">أكثر</string>
+    <string name="song_title_1">أضيفت مؤخرا</string>
+    <string name="song_title_2">الأكثر استماعا</string>
+    <string name="song_title_3">الحضور والمتحدثون</string>
+    <string name="song_title_4">الفئات</string>
+    <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>add song string's<<<<<<<<<<<<<<<<<<<<<<<<<<<<-->
+    <string name="song_title">تحميل الملفات الصوتية</string>
+    <string name="book_name">اسم الكتاب</string>
+    <string name="auth_name">اسم المؤلف</string>
+    <string name="category">فئة</string>
+    <string name="comment">تعليق</string>
+    <string name="upload_book_pic">تحميل صورة كتاب ...</string>
+    <string name="choose_a_file">اختيار ملف صوتي ...</string>
+    <string name="start_rec">ابدأ التسجيل</string>
+    <string name="stop_rec">بدء التسجيل</string>
+    <string name="submit_song">ارسال الملف</string>
+    <string name="cat_name">نوع اسم التصنيف</string>
+    <!-- >>>>>>>>>>>>>>>>>>>>>>Toast msg<<<<<<<<<<<<<<<<<<<<<<<<-->
+    <string name="emailinvalid">معرف البريد الإلكتروني غير صالح!</string>
+    <string name="emptyFiled">المجال لا يمكن أن تكون فارغة</string>
+    <string name="connection_error">الرجاء التحقق من اتصال الإنترنت!</string>
+    <string name="load">جار التحميل...</string>
+    <string name="server_error">الخادم لا يستجيب!</string>
+    <string name="wait">    يرجى الانتظار...</string>
+    <string name="login_prog">تسجيل الدخول</string>
+    <string name="incorrect_cre">بريد أو كلمة مرورغير صحيحة</string>
+    <string name="reg_dialog">تسجيل</string>
+    <string name="existing_email">البريد الإلكتروني موجود بالفعل</string>
+    <string name="sent_pass">البريد الالكتروني أرسلت إلى عنوان بريدك الإلكتروني المسجل</string>
+    <string name="email_not_available">بريد الكترونى غير موجود</string>
+    <string name="sent_req">طلب أرسلت</string>
+    <string name="more_apps_unavail">المزيد من الكتب غير متوفرة</string>
+    <string name="song_select">يرجى تحديد أو تسجيل أغنية لأول مرة</string>
+    <string name="selection_error_msg">يرجى تحديد أو تسجيل الصوت لأول مرة</string>
+    <string name="category_not_selected">الرجاء تحديد الفئة</string>
+    <string name="other_cat_name">يرجى ملء الآخر اسم الفئة</string>
+    <string name="audio_not_select">يرجى تحديد أو تسجيل الكتب الصوتية</string>
+    <string name="picture_not_select">يرجى اختيار صورة لكتاب صوتي</string>
+    <string name="sucees_msg">كتاب الصوت تحميل الانتظار بنجاح للموافقة المشرف</string>
+    <string name="failed_msg">فشل كتاب الصوت تحميل</string>
+    <string name="fb_app_n_a">الفيسبوك التطبيق غير مثبت في هاتفك النقال</string>
+    <string name="tw_app_n_a">تويتر التطبيق غير مثبت في هاتفك النقال</string>
+    <string name="select_playlistortype">حدد قائمة التشغيل أو اكتب اسم قائمة التشغيل</string>
+    <string name="play_list_selected">قائمة تشغيل محددة مسبقا!</string>
+    <string name="added_suc">وأضاف وثائقي في قائمة التشغيل بنجاح</string>
+    <string name="prev_added">بالفعل في قائمة التشغيل!</string>
+    <string name="play_faild">اللعب فشل</string>
+    <string name="greaterfilesize">حجم ملف أكبر من 30 ميغابايت</string>
+    <string name="pwd_update_success">كلمة المرور بنجاح تحديث !</string>
+    <string name="pwd_not_valid">كلمة المرور الحالية غير صالحة !</string>
+    <string name="pwd_and_confirmpwd_not_match">كلمة المرور الجديدة و تأكيد كلمة المرور لا يقابل !</string>
+    <!-- >>>>>>>>>>>>>>>>>>>>>>Categories Array<<<<<<<<<<<<<<<<<<<<<-->
+    <string-array name="Categories">
+        <item>الكتب الإسلامية</item>
+        <item>العلوم والهندسة</item>
+        <item>سير و مذكرات</item>
+        <item>القصص والروايات</item>
+        <item>الكمبيوتر والتكنولوجيا</item>
+        <item>التاريخ والجغرافيا</item>
+        <item>الفكر والثقافة</item>
+        <item>علوم طبية</item>
+        <item>تطوير الذات</item>
+        <item>الأسرة وعلم الاجتماع والمجتمع</item>
+        <item>سياسة واقتصاد</item>
+        <item>الأدب والشعر</item>
+        <item>كل</item>
+        <item>آخرون</item>
+    </string-array>
+    <!-- >>>>>>>>>>>>>>>>>>>>>>Spinner Categories Array<<<<<<<<<<<<<<<<<<<<<-->
+    <string-array name="Spin_cat">
+        <item>اختر الفئة</item>
+        <item>الكتب الإسلامية</item>
+        <item>العلوم والهندسة</item>
+        <item>سير و مذكرات</item>
+        <item>القصص والروايات</item>
+        <item>الكمبيوتر والتكنولوجيا</item>
+        <item>التاريخ والجغرافيا</item>
+        <item>الفكر والثقافة</item>
+        <item>علوم طبية</item>
+        <item>تطوير الذات</item>
+        <item>الأسرة وعلم الاجتماع والمجتمع</item>
+        <item>سياسة واقتصاد</item>
+        <item>الأدب والشعر</item>
+        <item>آخرون</item>
+    </string-array>
+    <!-- >>>>>>>>>>>>>>>>>>>>>>>>STRING FOR ALERT DIALOG<<<<<<<<<<<<<<<<<<<<<<  -->
+    <string name="book_namedial">اسم القائمة</string>
+    <string name="cancel">إلغاء</string>
+    <string name="file_selection">اختر ملفا</string>
+    <string name="record_audio">تسجيل الصوت</string>
+    <string name="comment_list">التعليقات</string>
+    <string name="likelist">الناس الذين يحبون هذا</string>
+    <string name="share_txt">شارك</string>
+    <string name="send_comment">أرسل تعليق</string>
+    <string name="save">حفظ</string>
+    <string name="add_playlist">أضف إلى قائمة التشغيل</string>
+    <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>STRING FOR PROFILE EDIT<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<-->
+    <string name="edit_profile">تعديل الملف الشخصي</string>
+    <string name="ch_pro_pic">حدد صورة</string>
+    <string name="update_pro">تحديث الملف</string>
+    <string name="follow_edt">استمع</string>
+    <string name="playlist_name">اكتب اسم قائمة التشغيل</string>
+    <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>STRING FOR CONTACT US<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<-->
+    <string name="name_c_us">اسم</string>
+    <string name="email_c_us">البريد الإلكتروني</string>
+    <string name="sub_c_us">موضوع</string>
+    <string name="msg_c_us">رسالة</string>
+    <string name="submit_c_us">ارسال</string>
+    <string name="contact_us">اتصل بنا</string>
+    <!-->>>>>>>>>>>>>>>>>>>>>>>>>>>ABOUT US TXT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<-->
+    <string name="about_content">أوديو كتاب: هي عبارة عن منصة الكترونية تفاعلية تهدف إلى تكوين مكتبة صوتية تضم كل ما هو مفيد في مختلف المجالات. وتشكل هذه المنصة فرصة فريدة ومهمة  في بناء و اثراء المعرفة في العالم العربي. تتيح للمستخدم العرض و المشاركة و التعليق على المحتوى كما تمكنه من تكوين قاعدة من المتابعين والمستمعين له، أو متابعة متحدثين آخرين.</string>
+</resources>

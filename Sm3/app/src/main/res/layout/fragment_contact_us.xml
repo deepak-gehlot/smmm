@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#EDEDED"
+    android:layout_height="match_parent">
+    <rws.sm3.app.CustomWidget.CustomTextView
+        android:layout_width="match_parent"
+        android:text="@string/contact_us"
+        android:layout_margin="@dimen/margin"
+        android:textColor="#000000"
+        android:textSize="@dimen/size_top_text"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+<rws.sm3.app.CustomWidget.CustomTextView
+    android:layout_width="match_parent"
+    android:text="info@audioketab.com"
+    android:layout_margin="@dimen/margin"
+    android:textColor="#000000"
+    android:textSize="@dimen/size_top_text"
+    android:gravity="center"
+    android:drawableRight="@drawable/mail"
+    android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_marginBottom="@dimen/padding"
+        android:gravity="center_vertical"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_marginBottom="@dimen/padding"
+            android:isScrollContainer="true"
+            android:scrollbars="none">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+        <rws.sm3.app.CustomWidget.CustomEditText
+            android:id="@+id/c_us_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edt_height"
+            android:background="#ffffff"
+            android:textColorHint="#000000"
+            android:textColor="#000000"
+            android:gravity="right|center_vertical"
+            android:hint="@string/name_c_us"
+            android:imeOptions="actionNext"
+            android:padding="@dimen/padding"
+            android:singleLine="true" />
+
+        <rws.sm3.app.CustomWidget.CustomEditText
+            android:id="@+id/c_us_email"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edt_height"
+            android:layout_marginTop="@dimen/padding"
+            android:textColorHint="#000000"
+            android:textColor="#000000"
+            android:background="#ffffff"
+            android:gravity="right|center_vertical"
+            android:hint="@string/email_c_us"
+            android:imeOptions="actionNext"
+            android:padding="@dimen/padding"
+            android:singleLine="true" />
+        <rws.sm3.app.CustomWidget.CustomEditText
+            android:id="@+id/c_us_sub"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edt_height"
+            android:layout_marginTop="@dimen/padding"
+            android:textColorHint="#000000"
+            android:textColor="#000000"
+            android:background="#ffffff"
+            android:gravity="right|center_vertical"
+            android:hint="@string/sub_c_us"
+            android:imeOptions="actionNext"
+            android:padding="@dimen/padding"
+            android:singleLine="true" />
+        <rws.sm3.app.CustomWidget.CustomEditText
+            android:id="@+id/c_us_msg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edt_c_height"
+            android:layout_marginTop="@dimen/padding"
+            android:textColorHint="#000000"
+            android:textColor="#000000"
+            android:background="#ffffff"
+            android:gravity="right|top"
+            android:hint="@string/msg_c_us"
+            android:imeOptions="actionDone"
+            android:padding="@dimen/padding"
+            android:singleLine="true" />
+        <rws.sm3.app.CustomWidget.CustomTextView
+            android:id="@+id/c_us_submit"
+            android:layout_width="match_parent"
+            android:textColor="#ffffff"
+            android:text="@string/submit_c_us"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/padding"
+            android:background="@drawable/action_bar_button"
+            android:layout_height="@dimen/edt_height" />
+</LinearLayout>
+        </ScrollView>
+        </LinearLayout>
+
+</LinearLayout>

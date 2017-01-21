@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_player"
+        android:isScrollContainer="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layout_1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height"
+                android:layout_marginLeft="@dimen/padinglay"
+                android:layout_marginRight="@dimen/padinglay"
+                android:layout_marginTop="@dimen/padinglay"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <rws.sm3.app.CustomWidget.CustomTextView
+                    android:id="@+id/btn_more_1"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_log_btn"
+                    android:gravity="center"
+                    android:text="@string/btn_more"
+                    android:textColor="#ffffff" />
+
+                <rws.sm3.app.CustomWidget.CustomTextView
+                    android:id="@+id/title_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/song_title_1"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <GridView
+                android:id="@+id/first_grid"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:columnWidth="@dimen/gridcolom"
+                android:gravity="center"
+                android:horizontalSpacing="5dp"
+                android:numColumns="auto_fit"
+                android:padding="@dimen/padinglay"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="5dp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/layout_2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height"
+                android:layout_marginLeft="@dimen/padinglay"
+                android:layout_marginRight="@dimen/padinglay"
+                android:layout_marginTop="@dimen/padinglay"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <rws.sm3.app.CustomWidget.CustomTextView
+                    android:id="@+id/btn_more_2"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_log_btn"
+                    android:gravity="center"
+                    android:text="@string/btn_more"
+                    android:textColor="#ffffff" />
+
+                <rws.sm3.app.CustomWidget.CustomTextView
+                    android:id="@+id/title_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/song_title_2"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <GridView
+                android:id="@+id/second_grid"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:columnWidth="@dimen/gridcolom"
+                android:gravity="center"
+                android:horizontalSpacing="5dp"
+                android:numColumns="auto_fit"
+                android:padding="@dimen/padinglay"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="5dp"
+                android:visibility="gone" />
+            <LinearLayout
+                android:id="@+id/layout_3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height"
+                android:layout_marginLeft="@dimen/padinglay"
+                android:layout_marginRight="@dimen/padinglay"
+                android:layout_marginTop="@dimen/padinglay"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <rws.sm3.app.CustomWidget.CustomTextView
+                    android:id="@+id/btn_more_3"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_log_btn"
+                    android:gravity="center"
+                    android:text="@string/btn_more"
+                    android:textColor="#ffffff" />
+
+                <rws.sm3.app.CustomWidget.CustomTextView
+                    android:id="@+id/title_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/song_title_3"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <GridView
+                android:id="@+id/third_grid"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:columnWidth="@dimen/gridcolom"
+                android:gravity="center"
+                android:horizontalSpacing="5dp"
+                android:numColumns="auto_fit"
+                android:padding="@dimen/padinglay"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="5dp"
+                android:visibility="gone" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height"
+                android:layout_marginLeft="@dimen/padinglay"
+                android:layout_marginRight="@dimen/padinglay"
+                android:layout_marginTop="@dimen/padinglay"
+                android:orientation="horizontal"
+                android:id="@+id/list_top">
+
+                <rws.sm3.app.CustomWidget.CustomTextView
+                    android:id="@+id/btn_more_4"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_log_btn"
+                    android:gravity="center"
+                    android:text="@string/btn_more"
+                    android:textColor="#ffffff" />
+
+                <rws.sm3.app.CustomWidget.CustomTextView
+                    android:id="@+id/title_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/song_title_4"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_listcontent"
+                android:id="@+id/list_layout"
+                android:background="@drawable/list_background">
+
+                <ListView
+                    android:id="@+id/cat_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_listcontent"
+                    android:layout_marginRight="@dimen/padding_listcontent"
+                    android:divider="#BDBDBD"
+                    android:dividerHeight="@dimen/divider_height"
+                    android:scrollbars="none"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

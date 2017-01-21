@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="@dimen/padding"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_toLeftOf="@+id/lay_out_data"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/book_name"
+                android:layout_width="match_parent"
+                android:text="@string/title"
+                android:button="@null"
+                android:drawableRight="@drawable/radio_selector"
+                android:paddingRight="@dimen/padding"
+                android:drawablePadding="@dimen/padding"
+                android:textSize="@dimen/size_aud_text"
+                android:textColor="#000000"
+                android:gravity="right"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

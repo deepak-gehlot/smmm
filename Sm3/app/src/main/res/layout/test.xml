@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp">
+    <TextView
+        android:id="@+id/tv_seminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEMINAR"
+        android:textColor="#322865"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
+    <TextView
+        android:id="@+id/tv_seminarName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/button_register1"
+        android:layout_below="@+id/tv_seminar"
+        android:text="Optimizing Supply Chain gsgsggdfg"
+        android:textColor="#6E6E6E"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/button_register1"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tv_seminarName"
+        android:background="@drawable/bg_tw_btn"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

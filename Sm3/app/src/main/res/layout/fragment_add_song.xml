@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED"
+    android:orientation="vertical">
+
+    <rws.sm3.app.CustomWidget.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height"
+        android:gravity="center"
+        android:text="@string/song_title"
+        android:textColor="#42C4BD"
+        android:textSize="@dimen/title_txt" />
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_marginBottom="@dimen/padding"
+        android:isScrollContainer="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/padding"
+                android:layout_height="@dimen/edt_height">
+                <Spinner
+                    android:id="@+id/cat_spin"
+                    android:layout_width="match_parent"
+                    android:entries="@array/Spin_cat"
+                    android:layout_height="match_parent"
+                    android:gravity="right"
+                    android:background="@drawable/cat_spinner_selector" />
+            </LinearLayout>
+            <rws.sm3.app.CustomWidget.CustomEditText
+                android:id="@+id/type_cat_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edt_height"
+                android:layout_marginTop="@dimen/padding"
+                android:textColorHint="#000000"
+                android:textColor="#000000"
+                android:background="#ffffff"
+                android:visibility="gone"
+                android:gravity="right|center_vertical"
+                android:hint="@string/cat_name"
+                android:imeOptions="actionNext"
+                android:padding="@dimen/padding"
+                android:singleLine="true" />
+            <rws.sm3.app.CustomWidget.CustomEditText
+                android:layout_marginTop="@dimen/padding"
+                android:id="@+id/edt_book_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edt_height"
+                android:background="#ffffff"
+                android:textColorHint="#000000"
+                android:textColor="#000000"
+                android:gravity="right|center_vertical"
+                android:hint="@string/book_name"
+                android:imeOptions="actionNext"
+                android:padding="@dimen/padding"
+                android:singleLine="true" />
+
+            <rws.sm3.app.CustomWidget.CustomEditText
+                android:id="@+id/edt_auth_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edt_height"
+                android:layout_marginTop="@dimen/padding"
+                android:textColorHint="#000000"
+                android:textColor="#000000"
+                android:background="#ffffff"
+                android:gravity="right|center_vertical"
+                android:hint="@string/auth_name"
+                android:imeOptions="actionNext"
+                android:padding="@dimen/padding"
+                android:singleLine="true" />
+            <rws.sm3.app.CustomWidget.CustomEditText
+                android:id="@+id/edt_comment"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edt_c_height"
+                android:background="#ffffff"
+                android:layout_marginTop="@dimen/padding"
+                android:maxLength="240"
+                android:gravity="right|top"
+                android:hint="@string/comment"
+                android:textColorHint="#000000"
+                android:textColor="#000000"
+                android:imeOptions="actionDone"
+                android:padding="@dimen/padding" />
+
+        <LinearLayout
+            android:id="@+id/select_book_pic"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/action_bar_button"
+            android:layout_marginTop="@dimen/padding"
+            android:gravity="center"
+            android:layout_height="@dimen/edt_height">
+            <rws.sm3.app.CustomWidget.CustomTextView
+                android:id="@+id/textname123"
+                android:layout_width="wrap_content"
+                android:textColor="#ffffff"
+                android:drawableLeft="@drawable/upload"
+                android:drawablePadding="@dimen/padding"
+                android:text="@string/upload_book_pic"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+            <LinearLayout
+                android:id="@+id/select_aud_file"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:background="@drawable/action_bar_button"
+                android:layout_marginTop="@dimen/padding"
+                android:gravity="center"
+                android:layout_height="@dimen/edt_height">
+                <rws.sm3.app.CustomWidget.CustomTextView
+                    android:id="@+id/textname"
+                    android:layout_width="wrap_content"
+                    android:textColor="#ffffff"
+                    android:drawableLeft="@drawable/upload"
+                    android:drawablePadding="@dimen/padding"
+                    android:text="@string/choose_a_file"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <rws.sm3.app.CustomWidget.CustomTextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:text="@string/or"
+                android:layout_height="@dimen/edt_height">
+            </rws.sm3.app.CustomWidget.CustomTextView>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/back_play"
+                android:layout_marginTop="@dimen/padding"
+                android:layout_height="@dimen/edt_height">
+                <ImageView
+                    android:id="@+id/btn_ply_song"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/play_pause_back"
+                    android:padding="@dimen/padding"
+                    android:scaleType="centerInside"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/padding"
+                    android:src="@drawable/play_btn_main" />
+                <SeekBar
+                    android:id="@+id/song_prog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/btn_ply_song"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/padding"
+                    android:progressDrawable="@drawable/progress_seekbar"
+                    android:secondaryProgress="0"
+                    android:thumb="@drawable/control_btn" />
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/start_recording"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/padding"
+                android:weightSum="2"
+                android:layout_height="@dimen/edt_height">
+<rws.sm3.app.CustomWidget.CustomTextView
+    android:layout_width="0dp"
+    android:layout_weight="2"
+    android:textColor="#ffffff"
+    android:text="@string/stop_rec"
+    android:gravity="center"
+    android:background="@drawable/action_bar_button"
+    android:layout_height="match_parent" />
+                <!--<View-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="0.1"-->
+                    <!--android:layout_height="match_parent">-->
+                <!--</View>-->
+                <!--<rws.sm3.app.CustomWidget.CustomTextView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="0.95"-->
+                    <!--android:textColor="#ffffff"-->
+                    <!--android:text="@string/start_rec"-->
+                    <!--android:gravity="center"-->
+                    <!--android:background="@drawable/action_bar_button"-->
+                    <!--android:layout_height="match_parent" />-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_upload"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:background="@drawable/action_bar_button"
+                android:layout_marginTop="@dimen/padding"
+                android:gravity="center"
+                android:layout_height="@dimen/edt_height">
+                <rws.sm3.app.CustomWidget.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:textColor="#ffffff"
+                    android:drawablePadding="@dimen/padding"
+                    android:text="@string/submit_song"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

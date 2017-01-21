@@ -1,0 +1,189 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".MainActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:src="@drawable/logo" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:weightSum="12">
+        <!--android:text="eeghassan@hotmail.com"-->
+        <rws.sm3.app.CustomWidget.CustomEditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="@drawable/backgroundroundcorner"
+            android:drawablePadding="@dimen/padding"
+            android:drawableRight="@drawable/email"
+            android:gravity="right|center_vertical"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress"
+            android:paddingRight="@dimen/padding"
+            android:singleLine="true"
+            android:textColor="#8F8F8E"
+            android:textSize="@dimen/size_aud_text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"></View>
+        <!--android:text="123456"-->
+        <rws.sm3.app.CustomWidget.CustomEditText
+            android:id="@+id/edt_pass"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="@drawable/backgroundroundcorner"
+            android:drawablePadding="@dimen/padding"
+            android:drawableRight="@drawable/password"
+            android:gravity="right|center_vertical"
+            android:hint="@string/hint_pass"
+            android:inputType="textPassword"
+            android:paddingRight="@dimen/padding"
+            android:singleLine="true"
+            android:textColor="#8F8F8E"
+            android:textSize="@dimen/size_aud_text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"></View>
+
+        <rws.sm3.app.CustomWidget.CustomTextView
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="@drawable/bg_log_btn"
+            android:gravity="center"
+            android:text="@string/login"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/size_aud_text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.4"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="2">
+
+            <rws.sm3.app.CustomWidget.CustomTextView
+                android:id="@+id/btn_fb"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.85"
+                android:background="@drawable/bg_fb_btn"
+                android:drawableLeft="@drawable/f_icon"
+                android:gravity="center"
+                android:padding="@dimen/padding"
+                android:text="@string/fb"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/size_aud_text" />
+
+            <rws.sm3.app.CustomWidget.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/or"
+                android:textColor="#000000"
+                android:textSize="@dimen/size_aud_text" />
+
+            <rws.sm3.app.CustomWidget.CustomTextView
+                android:id="@+id/btn_g_plus"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.85"
+                android:background="@drawable/g_plus_btn"
+                android:drawableLeft="@drawable/g_plus_icon"
+                android:gravity="center"
+                android:padding="@dimen/padding"
+                android:text="@string/fb"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/size_aud_text" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <rws.sm3.app.CustomWidget.CustomTextView
+            android:id="@+id/btn_signup"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:background="@android:color/transparent"
+            android:gravity="top|right"
+            android:padding="@dimen/padding"
+            android:text="@string/signup"
+            android:textColor="#B7B7B7"
+            android:textSize="@dimen/size_aud_text" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2" />
+
+        <rws.sm3.app.CustomWidget.CustomTextView
+            android:id="@+id/btn_forgot"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:background="@android:color/transparent"
+            android:gravity="top|left"
+            android:padding="@dimen/padding"
+            android:text="@string/forgot_pass"
+            android:textColor="#B7B7B7"
+            android:textSize="@dimen/size_aud_text" />
+    </LinearLayout>
+
+</LinearLayout>
